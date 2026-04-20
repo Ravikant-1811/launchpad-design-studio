@@ -6,11 +6,8 @@ export const Footer = () => {
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container py-14 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Oracle Orbit logo" className="h-12 w-12 rounded bg-background/5 object-contain" />
-            <span className="font-display font-bold text-xl">
-              Oracle <span className="text-primary">Orbit</span>
-            </span>
+          <div className="flex items-center">
+            <img src={logo} alt="Oracle Orbit logo" className="h-16 md:h-20 w-auto rounded bg-background/5 object-contain" />
           </div>
           <p className="mt-4 max-w-sm text-secondary-foreground/70">
             Connect. Innovate. Elevate. — your IT partner for software, cloud, AI and data.
@@ -42,9 +39,9 @@ export const Footer = () => {
         <div>
           <h4 className="font-display font-semibold">Get in touch</h4>
           <ul className="mt-4 space-y-2 text-secondary-foreground/70">
-            <li>hello@oracleorbit.com</li>
-            <li>+1 (555) 010-2025</li>
-            <li>Bengaluru · Remote-first</li>
+            <li>Oracleorbit.in@gmail.com</li>
+            <li>+91 99743 88977</li>
+            <li>Vadodara, Gujarat</li>
           </ul>
         </div>
       </div>
