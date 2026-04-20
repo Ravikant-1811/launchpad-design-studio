@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/oracle-orbit-logo.jpeg";
+import logo from "@/assets/logo.png";
 import { Menu, X } from "lucide-react";
 
 const links = [

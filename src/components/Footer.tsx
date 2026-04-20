@@ -1,4 +1,4 @@
-import logo from "@/assets/oracle-orbit-logo.jpeg";
+import logo from "@/assets/logo.png";
 import { Linkedin, Twitter, Github } from "lucide-react";
 
 export const Footer = () => {
