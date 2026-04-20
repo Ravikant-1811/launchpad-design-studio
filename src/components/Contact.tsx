@@ -19,14 +19,14 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-muted/40">
+    <section id="contact" className="py-20 md:py-28 bg-secondary text-secondary-foreground">
       <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">Let's talk</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-bold leading-tight">
             Tell us about your <span className="text-gradient-orange">next orbit.</span>
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-secondary-foreground/75">
             Share a few details — we'll come back within one business day with a clear next step.
           </p>
 
@@ -35,26 +35,26 @@ export const Contact = () => {
               <span className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <Mail className="h-5 w-5" />
               </span>
-              <span className="font-medium">Oracleorbit.in@gmail.com</span>
+              <span className="font-medium text-secondary-foreground/95">Oracleorbit.in@gmail.com</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <Phone className="h-5 w-5" />
               </span>
-              <span className="font-medium">+91 99743 88977</span>
+              <span className="font-medium text-secondary-foreground/95">+91 99743 88977</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <MapPin className="h-5 w-5" />
               </span>
-              <span className="font-medium">Vadodara, Gujarat</span>
+              <span className="font-medium text-secondary-foreground/95">Vadodara, Gujarat</span>
             </li>
           </ul>
         </div>
 
         <form
           onSubmit={onSubmit}
-          className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-card space-y-5"
+          className="bg-white text-slate-900 border border-white/20 rounded-2xl p-6 md:p-8 shadow-card space-y-5"
         >
           <div className="grid sm:grid-cols-2 gap-5">
             <div>
