@@ -27,12 +27,9 @@ export const Navbar = () => {
         scrolled ? "bg-background/85 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-2" aria-label="Oracle Orbit home">
-          <img src={logo} alt="Oracle Orbit logo" className="h-10 w-10 md:h-12 md:w-12 object-contain" />
-          <span className="font-display font-bold text-lg md:text-xl tracking-tight">
-            Oracle <span className="text-primary">Orbit</span>
-          </span>
+      <div className="container flex items-center justify-between h-20 md:h-24">
+        <a href="#" className="flex items-center" aria-label="Oracle Orbit home">
+          <img src={logo} alt="Oracle Orbit logo" className="h-14 md:h-16 w-auto object-contain" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
