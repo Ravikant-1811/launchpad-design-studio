@@ -35,19 +35,19 @@ export const Contact = () => {
               <span className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <Mail className="h-5 w-5" />
               </span>
-              <span className="font-medium">hello@oracleorbit.com</span>
+              <span className="font-medium">Oracleorbit.in@gmail.com</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <Phone className="h-5 w-5" />
               </span>
-              <span className="font-medium">+1 (555) 010-2025</span>
+              <span className="font-medium">+91 99743 88977</span>
             </li>
             <li className="flex items-center gap-3">
               <span className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <MapPin className="h-5 w-5" />
               </span>
-              <span className="font-medium">Remote-first · HQ in Bengaluru, IN</span>
+              <span className="font-medium">Vadodara, Gujarat</span>
             </li>
           </ul>
         </div>
