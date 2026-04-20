@@ -27,7 +27,7 @@ export const Contact = () => {
             Tell us about your <span className="text-gradient-orange">next orbit.</span>
           </h2>
           <p className="mt-4 text-lg text-secondary-foreground/75">
-            Share a few details — we'll come back within one business day with a clear next step.
+            Tell us your development or marketing goals and we'll share a clear action plan within one business day.
           </p>
 
           <ul className="mt-10 space-y-4">
@@ -77,7 +77,7 @@ export const Contact = () => {
               name="message"
               required
               rows={5}
-              placeholder="Tell us about your project, timeline and goals…"
+              placeholder="Tell us what you need: website/app, SEO, GMB, or marketing..."
               className="mt-2"
             />
           </div>

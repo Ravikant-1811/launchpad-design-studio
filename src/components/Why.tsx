@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Sparkles, Users, Globe, Clock } from "lucide-react";
 
 const items = [
-  { icon: Sparkles, k: "Senior-only teams", v: "No juniors learning on your dime. Every engineer ships production code week one." },
-  { icon: Users, k: "Outcome-led delivery", v: "We measure success in your KPIs — revenue, retention, latency — not story points." },
-  { icon: Globe, k: "Global, async-first", v: "Engineers across 4 time zones means progress on your roadmap around the clock." },
-  { icon: Clock, k: "Move in 7 days", v: "Tight scoping, signed contract, environments live — your kickoff is one week away." },
+  { icon: Sparkles, k: "Build + Growth together", v: "We do development and marketing in one team, so strategy and execution stay aligned." },
+  { icon: Users, k: "Lead-focused delivery", v: "Every sprint is tied to outcomes: better rankings, more leads, and stronger conversion." },
+  { icon: Globe, k: "Local + global visibility", v: "From SEO to GMB and digital campaigns, we help you get discovered across channels." },
+  { icon: Clock, k: "Fast launch cadence", v: "Rapid execution from planning to go-live, followed by continuous optimization." },
 ];
 
 export const Why = () => {
@@ -18,10 +18,10 @@ export const Why = () => {
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">Why Oracle Orbit</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-bold leading-tight">
-            A different kind of IT partner.
+            Your technology and marketing growth partner.
           </h2>
           <p className="mt-4 text-lg text-secondary-foreground/70">
-            We pair startup velocity with enterprise rigor. The result: software that ships on time, scales without surprises, and earns trust on day one.
+            We combine product engineering with SEO and marketing execution to help you launch faster, rank higher, and grow consistently.
           </p>
         </div>
 

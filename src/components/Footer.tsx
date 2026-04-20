@@ -10,7 +10,7 @@ export const Footer = () => {
             <img src={logo} alt="Oracle Orbit logo" className="h-16 md:h-20 w-auto rounded bg-background/5 object-contain" />
           </div>
           <p className="mt-4 max-w-sm text-slate-600">
-            Connect. Innovate. Elevate. — your IT partner for software, cloud, AI and data.
+            IT development + SEO + GMB + marketing services to help your business build, rank, and grow.
           </p>
           <div className="mt-6 flex items-center gap-3">
             {[Linkedin, Twitter, Github].map((Icon, i) => (

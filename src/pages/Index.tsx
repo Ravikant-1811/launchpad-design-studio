@@ -11,7 +11,7 @@ const Index = () => {
   useEffect(() => {
     document.title = "Oracle Orbit — Connect. Innovate. Elevate.";
     const desc =
-      "Oracle Orbit is an IT company building custom software, cloud, AI and data products that help ambitious teams move faster.";
+      "Oracle Orbit is an IT development and marketing agency offering software, website development, SEO, GMB optimization, and digital marketing services.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");

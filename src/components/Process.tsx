@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { n: "01", t: "Discover", d: "We dig into your goals, users and constraints to map the real problem." },
-  { n: "02", t: "Design", d: "Architecture, UX and a delivery plan you can take to your board." },
-  { n: "03", t: "Build", d: "Senior engineers ship in weekly increments with full transparency." },
-  { n: "04", t: "Elevate", d: "We monitor, iterate and scale — so the orbit only widens from here." },
+  { n: "01", t: "Audit", d: "We assess your business goals, current website/app, SEO baseline, and market opportunities." },
+  { n: "02", t: "Plan", d: "We define your build roadmap, keyword strategy, GMB actions, and campaign structure." },
+  { n: "03", t: "Execute", d: "Our team develops, optimizes, and launches with clear weekly updates and priorities." },
+  { n: "04", t: "Scale", d: "We improve rankings, leads, and conversion through continuous technical and marketing iteration." },
 ];
 
 export const Process = () => {
@@ -14,7 +14,7 @@ export const Process = () => {
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">How we work</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-bold leading-tight">
-            A process built for momentum.
+            A process built for growth.
           </h2>
         </div>
 

@@ -1,36 +1,36 @@
-import { Code2, Cloud, Brain, Smartphone, ShieldCheck, BarChart3 } from "lucide-react";
+import { Code2, Cloud, Smartphone, Search, MapPin, Megaphone } from "lucide-react";
 import { motion } from "framer-motion";
 
 const services = [
   {
     icon: Code2,
     title: "Custom Software",
-    desc: "Bespoke platforms and SaaS products engineered for scale, performance and clean architecture.",
+    desc: "Business software, portals, and internal tools engineered for speed, reliability, and scale.",
   },
   {
     icon: Cloud,
     title: "Cloud & DevOps",
-    desc: "AWS, Azure, GCP — infrastructure as code, CI/CD pipelines and zero-downtime deployments.",
-  },
-  {
-    icon: Brain,
-    title: "AI / ML",
-    desc: "LLM apps, RAG, predictive models and AI agents that move real KPIs, not demos.",
+    desc: "AWS, Azure, GCP setup with CI/CD, monitoring, and production-ready deployment pipelines.",
   },
   {
     icon: Smartphone,
-    title: "Web & Mobile",
-    desc: "Pixel-perfect web apps and cross-platform mobile experiences your users love to open.",
+    title: "Web & App Development",
+    desc: "Modern websites, web apps, and mobile experiences designed to convert and perform.",
   },
   {
-    icon: ShieldCheck,
-    title: "Cybersecurity",
-    desc: "Audits, hardening, SOC2 readiness and 24/7 monitoring to keep your business safe.",
+    icon: Search,
+    title: "SEO Services",
+    desc: "Technical SEO, on-page optimization, content planning, and local SEO that improves rankings.",
   },
   {
-    icon: BarChart3,
-    title: "Data & Analytics",
-    desc: "Pipelines, warehouses and dashboards that turn raw data into decisions in real time.",
+    icon: MapPin,
+    title: "GMB Optimization",
+    desc: "Google Business Profile setup and optimization to increase calls, direction requests, and local leads.",
+  },
+  {
+    icon: Megaphone,
+    title: "Digital Marketing",
+    desc: "Paid campaigns, funnels, and performance tracking focused on leads, revenue, and ROI.",
   },
 ];
 
@@ -41,10 +41,10 @@ export const Services = () => {
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">What we do</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-bold leading-tight">
-            Full-stack IT services, <span className="text-gradient-orange">end to end.</span>
+            Development + Marketing, <span className="text-gradient-orange">under one roof.</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            One team, one orbit. From the first whiteboard sketch to production at scale.
+            One team for build and growth: from website and software delivery to SEO, GMB, and paid marketing.
           </p>
         </div>
 

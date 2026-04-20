@@ -15,7 +15,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            IT Solutions · Software · Cloud · AI
+            IT Development · SEO · GMB · Marketing
           </motion.span>
 
           <motion.h1
@@ -36,8 +36,8 @@ export const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 text-lg text-muted-foreground leading-relaxed"
           >
-            Oracle Orbit is the IT partner that engineers your next leap — custom software,
-            cloud, AI and data, built by a team obsessed with craft and outcomes.
+            Oracle Orbit is your IT and growth partner. We build websites, software, and automation,
+            then scale your visibility with SEO, Google Business Profile (GMB), and performance marketing.
           </motion.p>
 
           <motion.div
