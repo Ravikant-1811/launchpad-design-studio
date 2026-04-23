@@ -18,9 +18,6 @@ export const Footer = () => {
           <p className="mt-4 max-w-sm text-slate-600">
             IT development + SEO + GMB + marketing services to help your business build, rank, and grow.
           </p>
-          <p className="mt-2 text-sm text-slate-500">
-            Project owner: Ravikant Upadhyay
-          </p>
           <div className="mt-6 flex items-center gap-3">
             {projectLinks.map((item) => (
               <a
@@ -59,7 +56,7 @@ export const Footer = () => {
 
       <div className="border-t border-slate-200">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Oracle Orbit. All rights reserved. Owned by Ravikant Upadhyay.</p>
+          <p>© {new Date().getFullYear()} Oracle Orbit. All rights reserved.</p>
           <p>Official: oracleorbit.in</p>
         </div>
       </div>
