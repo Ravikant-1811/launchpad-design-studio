@@ -1,9 +1,17 @@
 import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { TrustSignals } from "@/components/TrustSignals";
 import { Services } from "@/components/Services";
+import { SeoGmbSnapshot } from "@/components/SeoGmbSnapshot";
+import { Industries } from "@/components/Industries";
+import { Plans } from "@/components/Plans";
+import { Stack } from "@/components/Stack";
+import { Testimonials } from "@/components/Testimonials";
 import { Why } from "@/components/Why";
 import { Process } from "@/components/Process";
+import { Faq } from "@/components/Faq";
+import { FinalCta } from "@/components/FinalCta";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -33,9 +41,17 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
+      <TrustSignals />
       <Services />
+      <SeoGmbSnapshot />
+      <Industries />
+      <Plans />
+      <Stack />
+      <Testimonials />
       <Why />
       <Process />
+      <Faq />
+      <FinalCta />
       <Contact />
       <Footer />
     </main>
