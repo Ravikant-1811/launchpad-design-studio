@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 
 const phoneNumber = "919974388977";
@@ -7,7 +7,7 @@ export const FinalCta = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const message = encodeURIComponent(
       `Hi Oracle Orbit, I want a free strategy call.\n\nName: ${name}\nPhone: ${phone}`
@@ -39,7 +39,7 @@ export const FinalCta = () => {
               </a>
             </Button>
             <Button variant="outline-dark" size="lg" asChild>
-              <a href="#contact">Quick lead form</a>
+              <a href="#book-call">Quick lead form</a>
             </Button>
           </div>
         </div>

@@ -1,22 +1,33 @@
 const signals = [
-  "Transparent weekly reporting",
-  "Dedicated account manager",
-  "Build + marketing in one team",
-  "Local SEO + GMB focused execution",
+  {
+    title: "Build",
+    desc: "Websites, platforms, and systems designed to look premium and work fast.",
+  },
+  {
+    title: "Rank",
+    desc: "SEO and GMB work that improves visibility across search and maps.",
+  },
+  {
+    title: "Grow",
+    desc: "Marketing execution that turns attention into leads and business growth.",
+  },
 ];
 
 export const TrustSignals = () => {
   return (
-    <section className="py-10 border-y border-border bg-background">
+    <section className="py-16 bg-background">
       <div className="container">
-        <div className="flex flex-wrap gap-3">
+        <div className="grid md:grid-cols-3 gap-4">
           {signals.map((signal) => (
-            <span
-              key={signal}
-              className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-foreground"
+            <article
+              key={signal.title}
+              className="rounded-2xl border border-border bg-card p-6 shadow-card"
             >
-              {signal}
-            </span>
+              <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                {signal.title}
+              </p>
+              <p className="mt-3 text-muted-foreground leading-relaxed">{signal.desc}</p>
+            </article>
           ))}
         </div>
       </div>
