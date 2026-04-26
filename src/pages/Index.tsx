@@ -11,7 +11,6 @@ import { Testimonials } from "@/components/Testimonials";
 import { Why } from "@/components/Why";
 import { Process } from "@/components/Process";
 import { Faq } from "@/components/Faq";
-import { FinalCta } from "@/components/FinalCta";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -51,7 +50,6 @@ const Index = () => {
       <Why />
       <Process />
       <Faq />
-      <FinalCta />
       <Contact />
       <Footer />
     </main>
