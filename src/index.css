@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 /* Oracle Orbit — Design System
-   Bold IT brand: charcoal foreground, signature orange accent, warm off-white surfaces.
+   Monochrome brand: black primary, white surfaces, clean neutral contrast.
    All colors are HSL.
 */
 
 @layer base {
   :root {
-    --background: 36 33% 98%;
-    --foreground: 222 11% 18%;
+    --background: 0 0% 100%;
+    --foreground: 222 11% 11%;
 
     --card: 0 0% 100%;
     --card-foreground: 222 11% 18%;
@@ -20,38 +20,38 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 11% 18%;
 
-    /* Brand orange from logo */
-    --primary: 20 90% 54%;
+    /* Black primary for buttons and key actions */
+    --primary: 222 11% 11%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 24 95% 62%;
+    --primary-glow: 222 11% 28%;
 
-    /* Charcoal from logo */
-    --secondary: 222 11% 18%;
+    /* Dark inverse section */
+    --secondary: 222 11% 12%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 15% 94%;
-    --muted-foreground: 222 8% 42%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 222 8% 40%;
 
-    --accent: 20 90% 54%;
+    --accent: 222 11% 11%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 12% 88%;
-    --input: 30 12% 88%;
-    --ring: 20 90% 54%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 222 11% 11%;
 
     --radius: 0.75rem;
 
     /* Brand gradients & shadows */
-    --gradient-orange: linear-gradient(135deg, hsl(20 90% 54%), hsl(24 95% 62%));
+    --gradient-orange: linear-gradient(135deg, hsl(222 11% 11%), hsl(222 11% 28%));
     --gradient-dark: linear-gradient(135deg, hsl(222 14% 14%), hsl(222 11% 22%));
-    --gradient-hero: radial-gradient(ellipse at top right, hsl(24 95% 62% / 0.15), transparent 60%),
-                     radial-gradient(ellipse at bottom left, hsl(20 90% 54% / 0.08), transparent 60%);
-    --shadow-elegant: 0 20px 50px -20px hsl(20 90% 54% / 0.35);
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(222 11% 11% / 0.06), transparent 60%),
+                     radial-gradient(ellipse at bottom left, hsl(222 11% 11% / 0.03), transparent 60%);
+    --shadow-elegant: 0 20px 50px -20px hsl(222 11% 11% / 0.25);
     --shadow-card: 0 4px 24px -8px hsl(222 14% 14% / 0.08);
-    --shadow-glow: 0 0 60px hsl(24 95% 62% / 0.4);
+    --shadow-glow: 0 0 60px hsl(222 11% 11% / 0.18);
 
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 

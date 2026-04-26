@@ -1,14 +1,24 @@
-const stack = [
-  "React",
-  "WordPress",
-  "TypeScript",
-  "Node.js",
-  "Google Analytics 4",
-  "Google Search Console",
-  "Google Business Profile",
-  "Google Ads",
-  "Meta Ads",
-  "Tag Manager",
+import { BarChart3, Braces, Brush, Code2, Layers3, LayoutGrid, Megaphone, MonitorSmartphone, PenTool, Palette, Search, Server } from "lucide-react";
+
+const devTools = [
+  { icon: Code2, label: "React" },
+  { icon: MonitorSmartphone, label: "WordPress" },
+  { icon: Braces, label: "TypeScript" },
+  { icon: Server, label: "Node.js" },
+  { icon: BarChart3, label: "Google Analytics 4" },
+  { icon: Search, label: "Google Search Console" },
+  { icon: LayoutGrid, label: "Google Business Profile" },
+  { icon: Megaphone, label: "Google Ads" },
+  { icon: Megaphone, label: "Meta Ads" },
+  { icon: Layers3, label: "Tag Manager" },
+];
+
+const designTools = [
+  { icon: PenTool, label: "Wireframes" },
+  { icon: Palette, label: "Brand Design" },
+  { icon: LayoutGrid, label: "Layouts" },
+  { icon: Layers3, label: "Design Systems" },
+  { icon: Brush, label: "UI Prototypes" },
 ];
 
 export const Stack = () => {
@@ -22,12 +32,34 @@ export const Stack = () => {
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {stack.map((tool) => (
-            <div key={tool} className="rounded-xl border border-border bg-card px-4 py-4 text-center font-semibold shadow-card">
-              {tool}
+        <div className="mt-10 space-y-10">
+          <div>
+            <h3 className="text-xl font-bold">Development & Marketing</h3>
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              {devTools.map((tool) => (
+                <div key={tool.label} className="rounded-2xl border border-border bg-card p-4 shadow-card">
+                  <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                    <tool.icon className="h-5 w-5" />
+                  </div>
+                  <p className="mt-3 text-sm font-semibold">{tool.label}</p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold">Design Tools</h3>
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              {designTools.map((tool) => (
+                <div key={tool.label} className="rounded-2xl border border-border bg-card p-4 shadow-card">
+                  <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                    <tool.icon className="h-5 w-5" />
+                  </div>
+                  <p className="mt-3 text-sm font-semibold">{tool.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

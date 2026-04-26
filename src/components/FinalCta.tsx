@@ -1,20 +1,7 @@
-import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
-
 const phoneNumber = "919974388977";
 
 export const FinalCta = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const message = encodeURIComponent(
-      `Hi Oracle Orbit, I want a free strategy call.\n\nName: ${name}\nPhone: ${phone}`
-    );
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <section id="book-call" className="py-20 md:py-24 bg-secondary text-secondary-foreground">
       <div className="container grid lg:grid-cols-2 gap-10 items-center">
@@ -39,38 +26,22 @@ export const FinalCta = () => {
               </a>
             </Button>
             <Button variant="outline-dark" size="lg" asChild>
-              <a href="#book-call">Quick lead form</a>
+              <a href="#contact">Contact form</a>
             </Button>
           </div>
         </div>
 
-        <form onSubmit={onSubmit} className="rounded-2xl bg-white text-slate-900 p-6 md:p-8 shadow-card space-y-4">
-          <div>
-            <label htmlFor="cta-name" className="text-sm font-medium">Name</label>
-            <input
-              id="cta-name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="mt-2 w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:ring-2 focus:ring-primary/30"
-              placeholder="Your name"
-              required
-            />
+        <div className="rounded-2xl bg-white text-slate-900 p-6 md:p-8 shadow-card">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary">Quick action</p>
+          <p className="mt-3 text-lg text-slate-600">
+            One clear contact form below, plus WhatsApp for quick questions.
+          </p>
+          <div className="mt-6">
+            <Button variant="outline-dark" size="lg" asChild>
+              <a href="#contact">Open contact form</a>
+            </Button>
           </div>
-          <div>
-            <label htmlFor="cta-phone" className="text-sm font-medium">Phone</label>
-            <input
-              id="cta-phone"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              className="mt-2 w-full rounded-xl border border-border bg-background px-4 py-3 outline-none focus:ring-2 focus:ring-primary/30"
-              placeholder="Your phone number"
-              required
-            />
-          </div>
-          <Button type="submit" variant="hero" size="lg" className="w-full">
-            Request callback
-          </Button>
-        </form>
+        </div>
       </div>
     </section>
   );

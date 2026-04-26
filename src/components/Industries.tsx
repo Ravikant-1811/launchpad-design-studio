@@ -1,12 +1,14 @@
+import { Building2, Briefcase, GraduationCap, Home, Laptop, ShoppingBag, Stethoscope, UtensilsCrossed } from "lucide-react";
+
 const industries = [
-  "Clinics & Healthcare",
-  "Dental Practices",
-  "Education & Coaching",
-  "Local Service Businesses",
-  "Ecommerce Brands",
-  "Real Estate & Construction",
-  "Professional Services",
-  "Hospitality & Restaurants",
+  { icon: Stethoscope, label: "Clinics & Healthcare" },
+  { icon: Stethoscope, label: "Dental Practices" },
+  { icon: GraduationCap, label: "Education & Coaching" },
+  { icon: Briefcase, label: "Local Service Businesses" },
+  { icon: ShoppingBag, label: "Ecommerce Brands" },
+  { icon: Building2, label: "Real Estate & Construction" },
+  { icon: Home, label: "Professional Services" },
+  { icon: UtensilsCrossed, label: "Hospitality & Restaurants" },
 ];
 
 export const Industries = () => {
@@ -22,8 +24,11 @@ export const Industries = () => {
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {industries.map((industry) => (
-            <div key={industry} className="rounded-xl border border-border bg-card px-4 py-4 font-medium">
-              {industry}
+            <div key={industry.label} className="rounded-2xl border border-border bg-card p-5 shadow-card">
+              <div className="h-11 w-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                <industry.icon className="h-5 w-5" />
+              </div>
+              <p className="mt-4 font-semibold">{industry.label}</p>
             </div>
           ))}
         </div>

@@ -5,14 +5,14 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 overflow-hidden bg-hero-glow">
-      <div className="container grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div className="max-w-xl">
+    <section className="relative pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden bg-hero-glow">
+      <div className="container max-w-5xl text-center">
+        <div className="max-w-3xl mx-auto">
           <motion.span
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-muted px-4 py-1.5 text-xs font-medium text-primary"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
             IT Development · SEO · GMB · Marketing
@@ -22,7 +22,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05]"
+            className="mt-6 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.02] tracking-tight"
           >
             Connect.{" "}
             <span className="text-gradient-orange">Innovate.</span>
@@ -34,7 +34,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 text-lg text-muted-foreground leading-relaxed"
+            className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
             Oracle Orbit is your IT and growth partner. We build websites, software, and automation,
             then scale your visibility with SEO, Google Business Profile (GMB), and performance marketing.
@@ -44,7 +44,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-8 flex flex-col sm:flex-row gap-3"
+            className="mt-8 flex flex-col sm:flex-row gap-3 justify-center"
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
@@ -60,7 +60,7 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-10 grid grid-cols-3 gap-6 max-w-md"
+            className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto"
           >
             {[
               { v: "120+", l: "Projects shipped" },
@@ -79,7 +79,7 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="relative mx-auto w-full max-w-lg"
+          className="relative mx-auto mt-14 w-full max-w-xl"
         >
           <OrbitGraphic className="w-full" />
         </motion.div>
