@@ -1,4 +1,4 @@
-import { Building2, Briefcase, GraduationCap, Home, Laptop, ShoppingBag, Stethoscope, UtensilsCrossed } from "lucide-react";
+import { Building2, Briefcase, GraduationCap, Home, ShoppingBag, Stethoscope, UtensilsCrossed } from "lucide-react";
 
 const industries = [
   { icon: Stethoscope, label: "Clinics & Healthcare" },
