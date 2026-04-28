@@ -1,16 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Facebook,
+  Globe,
+  Infinity,
+  Instagram,
+  MessageCircleMore,
+  Megaphone,
+  Server,
+} from "lucide-react";
 
 const logos = [
-  "Uber",
-  "headspace",
-  "Meta",
-  "airbnb",
-  "Revolut",
-  "Metalab",
-  "Pinterest",
+  { icon: Globe, label: "Google" },
+  { icon: Infinity, label: "Meta" },
+  { icon: Facebook, label: "Facebook" },
+  { icon: Instagram, label: "Instagram" },
+  { icon: MessageCircleMore, label: "WhatsApp" },
+  { icon: Megaphone, label: "Google Ads" },
+  { icon: Server, label: "Software" },
 ];
+
+const strip = [...logos, ...logos];
 
 export const Hero = () => {
   return (
@@ -76,18 +87,26 @@ export const Hero = () => {
             className="mt-20"
           >
             <p className="text-sm md:text-base font-medium text-muted-foreground">
-              Trusted by businesses at
+              Trusted by design teams at
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-5 text-muted-foreground/50 md:gap-x-16">
-              {logos.map((logo) => (
-                <span
-                  key={logo}
-                  className="text-2xl md:text-[2.05rem] font-semibold tracking-tight leading-none"
-                >
-                  {logo}
-                </span>
-              ))}
+            <div className="relative mt-8 overflow-hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background to-transparent" />
+
+              <div className="flex w-[200%] items-center gap-5 animate-marquee-left">
+                {strip.map((logo, index) => (
+                  <div
+                    key={`${logo.label}-${index}`}
+                    className="flex min-w-[170px] items-center justify-center gap-2 rounded-full border border-border/70 bg-background/70 px-5 py-3 text-muted-foreground/55 shadow-sm backdrop-blur-sm"
+                  >
+                    <logo.icon className="h-5 w-5" />
+                    <span className="text-lg font-medium tracking-tight leading-none">
+                      {logo.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
 
