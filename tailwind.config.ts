@@ -95,6 +95,10 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "marquee-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -105,6 +109,7 @@ export default {
         "spin-reverse": "spin-reverse 45s linear infinite",
         "pulse-glow": "pulse-glow 4s ease-in-out infinite",
         "float": "float 6s ease-in-out infinite",
+        "marquee-left": "marquee-left 28s linear infinite",
       },
     },
   },
