@@ -28,13 +28,13 @@ const strip = [...logos, ...logos];
 
 export const TrustSignals = () => {
   return (
-    <section className="py-8 bg-background">
+    <section className="py-10 bg-background">
       <div className="container">
         <p className="text-center text-sm font-medium text-muted-foreground">
           Logos we work with
         </p>
 
-        <div className="relative mt-4 overflow-hidden">
+        <div className="relative mt-5 overflow-hidden">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background to-transparent" />
 
