@@ -1,13 +1,21 @@
 import { Button } from "@/components/ui/button";
-import { OrbitGraphic } from "./OrbitGraphic";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden bg-hero-glow">
+    <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 overflow-hidden bg-hero-glow">
       <div className="container max-w-5xl text-center">
         <div className="max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-3xl border border-border bg-white shadow-card"
+          >
+            <img src="/favicon.png" alt="Oracle Orbit" className="h-14 w-14 object-contain" />
+          </motion.div>
+
           <motion.span
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,15 +82,6 @@ export const Hero = () => {
             ))}
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="relative mx-auto mt-14 w-full max-w-xl"
-        >
-          <OrbitGraphic className="w-full" />
-        </motion.div>
       </div>
     </section>
   );
