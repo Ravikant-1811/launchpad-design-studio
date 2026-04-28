@@ -64,23 +64,6 @@ export const Hero = () => {
             </Button>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto text-left"
-          >
-            {[
-              { v: "120+", l: "Projects shipped" },
-              { v: "40+", l: "Global clients" },
-              { v: "99.9%", l: "Uptime SLA" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="text-2xl font-display font-bold text-secondary">{s.v}</div>
-                <div className="text-xs text-muted-foreground mt-1">{s.l}</div>
-              </div>
-            ))}
-          </motion.div>
         </div>
       </div>
     </section>
