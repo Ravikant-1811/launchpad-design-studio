@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 overflow-hidden bg-hero-glow">
+    <section className="relative pt-36 md:pt-44 pb-10 md:pb-14 overflow-hidden bg-hero-glow">
       <div className="container max-w-5xl text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-6 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.02] tracking-tight"
+            className="mt-6 text-5xl sm:text-6xl lg:text-[7rem] font-bold leading-[0.95] tracking-tight"
           >
             Connect.{" "}
             <span className="text-gradient-orange">Innovate.</span>
@@ -42,7 +42,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
             Oracle Orbit is your IT and growth partner. We build websites, software, and automation,
             then scale your visibility with SEO, Google Business Profile (GMB), and performance marketing.
@@ -52,7 +52,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-8 flex flex-col sm:flex-row gap-3 justify-center"
+            className="mt-10 flex flex-col sm:flex-row gap-3 justify-center"
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
@@ -62,24 +62,6 @@ export const Hero = () => {
             <Button variant="outline-dark" size="xl" asChild>
               <a href="#services">Explore services</a>
             </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto text-left"
-          >
-            {[
-              { v: "120+", l: "Projects shipped" },
-              { v: "40+", l: "Global clients" },
-              { v: "99.9%", l: "Uptime SLA" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="text-2xl font-display font-bold text-secondary">{s.v}</div>
-                <div className="text-xs text-muted-foreground mt-1">{s.l}</div>
-              </div>
-            ))}
           </motion.div>
         </div>
       </div>
