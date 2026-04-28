@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -99,11 +99,21 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    line-height: 1.5;
     font-feature-settings: "ss01", "cv11";
   }
 
   h1, h2, h3, h4, h5 {
     @apply font-display tracking-tight;
+    line-height: 1;
+  }
+
+  h6, .section-subtitle {
+    line-height: 1.1;
+  }
+
+  p, li {
+    line-height: 1.5;
   }
 }
 
