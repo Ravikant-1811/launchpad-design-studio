@@ -2,22 +2,30 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
+  Code2,
   Facebook,
   Globe,
   Infinity,
   Instagram,
   MessageCircleMore,
+  Brain,
   Megaphone,
   Server,
+  Sparkles,
 } from "lucide-react";
 
 const logos = [
-  { icon: Globe, label: "Google" },
-  { icon: Infinity, label: "Meta" },
   { icon: Facebook, label: "Facebook" },
   { icon: Instagram, label: "Instagram" },
+  { icon: Infinity, label: "Meta" },
   { icon: MessageCircleMore, label: "WhatsApp" },
-  { icon: Megaphone, label: "Google Ads" },
+  { icon: Globe, label: "Google" },
+  { icon: Sparkles, label: "SEO" },
+  { icon: Brain, label: "ChatGPT" },
+  { icon: Brain, label: "Claude" },
+  { icon: Brain, label: "Perplexity" },
+  { icon: Code2, label: "Dev" },
+  { icon: Megaphone, label: "Marketing" },
   { icon: Server, label: "Software" },
 ];
 
@@ -87,20 +95,20 @@ export const Hero = () => {
             className="mt-16 md:mt-20"
           >
             <p className="text-sm md:text-base font-medium text-muted-foreground">
-              Trusted by design teams at
+              Trusted by businesses at
             </p>
 
-            <div className="relative mt-7 overflow-hidden">
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent" />
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent" />
+            <div className="relative mx-auto mt-7 h-[10.5rem] max-w-5xl overflow-hidden">
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-background to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-background to-transparent" />
 
-              <div className="flex w-[200%] items-center gap-4 animate-marquee-left">
+              <div className="grid grid-cols-1 gap-3 animate-marquee-up">
                 {strip.map((logo, index) => (
                   <div
                     key={`${logo.label}-${index}`}
-                    className="flex min-w-[158px] items-center justify-center gap-2 rounded-full border border-border/70 bg-background/60 px-5 py-3 text-muted-foreground/45 shadow-sm backdrop-blur-sm"
+                    className="flex items-center justify-center gap-3 rounded-full border border-border/70 bg-background/70 px-5 py-3 text-muted-foreground/55 shadow-sm backdrop-blur-sm"
                   >
-                    <logo.icon className="h-4 w-4" />
+                    <logo.icon className="h-4 w-4 shrink-0" />
                     <span className="text-base md:text-[1.05rem] font-medium tracking-tight leading-none">
                       {logo.label}
                     </span>
