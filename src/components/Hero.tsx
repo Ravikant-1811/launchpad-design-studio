@@ -46,11 +46,16 @@ export const Hero = () => {
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
-                Start your project <ArrowRight className="h-4 w-4" />
+                Start your project
               </a>
             </Button>
             <Button variant="outline-dark" size="xl" asChild>
-              <a href="#services">Explore services</a>
+              <a href="#services" className="group">
+                Explore services
+                <span className="ml-1.5 flex h-8 w-8 items-center justify-center rounded-full bg-muted text-foreground transition-transform duration-300 group-hover:translate-x-0.5">
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+              </a>
             </Button>
           </motion.div>
 
