@@ -2,6 +2,16 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
+const logos = [
+  "Uber",
+  "headspace",
+  "Meta",
+  "airbnb",
+  "Revolut",
+  "Metalab",
+  "Pinterest",
+];
+
 export const Hero = () => {
   return (
     <section className="relative pt-36 md:pt-44 pb-20 md:pb-28 overflow-hidden bg-hero-glow">
@@ -57,6 +67,28 @@ export const Hero = () => {
                 </span>
               </a>
             </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.45 }}
+            className="mt-20"
+          >
+            <p className="text-sm md:text-base font-medium text-muted-foreground">
+              Trusted by businesses at
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-5 text-muted-foreground/50 md:gap-x-16">
+              {logos.map((logo) => (
+                <span
+                  key={logo}
+                  className="text-2xl md:text-[2.05rem] font-semibold tracking-tight leading-none"
+                >
+                  {logo}
+                </span>
+              ))}
+            </div>
           </motion.div>
 
         </div>

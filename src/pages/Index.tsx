@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { TrustSignals } from "@/components/TrustSignals";
 import { Services } from "@/components/Services";
 import { SeoGmbSnapshot } from "@/components/SeoGmbSnapshot";
 import { Industries } from "@/components/Industries";
@@ -37,10 +36,9 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <TrustSignals />
       <Services />
       <SeoGmbSnapshot />
       <Industries />
