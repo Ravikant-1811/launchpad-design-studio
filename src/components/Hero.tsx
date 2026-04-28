@@ -16,16 +16,6 @@ export const Hero = () => {
             <img src="/favicon.png" alt="Oracle Orbit" className="h-16 w-16 object-contain" />
           </motion.div>
 
-          <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-muted px-4 py-1.5 text-xs font-medium text-primary"
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            IT Development · SEO · GMB · Marketing
-          </motion.span>
-
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
