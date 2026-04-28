@@ -11,9 +11,9 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-3xl border border-border bg-white shadow-card"
+            className="mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-border bg-white shadow-card"
           >
-            <img src="/favicon.png" alt="Oracle Orbit" className="h-14 w-14 object-contain" />
+            <img src="/favicon.png" alt="Oracle Orbit" className="h-16 w-16 object-contain" />
           </motion.div>
 
           <motion.span
@@ -68,7 +68,7 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto"
+            className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto text-left"
           >
             {[
               { v: "120+", l: "Projects shipped" },
