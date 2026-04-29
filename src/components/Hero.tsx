@@ -5,52 +5,50 @@ import {
   ArrowRight,
   Code2,
   Camera,
-  Facebook,
-  Globe,
   Infinity,
   Instagram,
   MessageCircleMore,
   Brain,
   Megaphone,
-  Server,
   Search,
+  Facebook,
 } from "lucide-react";
 
 const trustLogos = [
   {
     key: "facebook",
-    icon: <span className="text-[1.05rem] font-black leading-none text-white">f</span>,
+    icon: <Facebook className="h-5 w-5 text-[#1877F2]" />,
   },
   {
     key: "instagram",
-    icon: <Camera className="h-4 w-4 text-white" />,
+    icon: <Camera className="h-5 w-5 text-[#E1306C]" />,
   },
   {
     key: "meta",
-    icon: <Infinity className="h-4 w-4 text-white" />,
+    icon: <Infinity className="h-5 w-5 text-[#0866FF]" />,
   },
   {
     key: "whatsapp",
-    icon: <MessageCircleMore className="h-4 w-4 text-white" />,
+    icon: <MessageCircleMore className="h-5 w-5 text-[#25D366]" />,
   },
   {
     key: "google",
     icon: (
-      <span className="text-[1.05rem] font-black leading-none bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-40% via-[#FBBC05] to-[#34A853] bg-clip-text text-transparent">
+      <span className="text-[1.1rem] font-black leading-none bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-40% via-[#FBBC05] to-[#34A853] bg-clip-text text-transparent">
         G
       </span>
     ),
   },
   {
     key: "seo",
-    icon: <Search className="h-4 w-4 text-white" />,
+    icon: <Search className="h-5 w-5 text-[#111827]" />,
   },
   {
     key: "dev-marketing",
     icon: (
-      <div className="flex items-center gap-0.5 text-zinc-900">
-        <Code2 className="h-4 w-4" />
-        <Megaphone className="h-4 w-4" />
+      <div className="flex items-center gap-0.5 text-[#111827]">
+        <Code2 className="h-5 w-5" />
+        <Megaphone className="h-5 w-5" />
       </div>
     ),
   },
@@ -151,18 +149,15 @@ export const Hero = () => {
             className="mt-16 md:mt-20"
           >
             <p className="text-sm md:text-base font-medium text-muted-foreground">
-              Trusted by design teams at
+              Trusted by businesses at
             </p>
 
             <div className="mt-7 flex items-center justify-center gap-6 md:gap-10 flex-nowrap">
-                {trustLogos.map((logo) => (
-                  <div
-                    key={logo.key}
-                    className="flex h-12 w-12 items-center justify-center"
-                  >
-                    {logo.icon}
-                  </div>
-                ))}
+              {trustLogos.map((logo) => (
+                <div key={logo.key} className="flex items-center justify-center">
+                  {logo.icon}
+                </div>
+              ))}
             </div>
           </motion.div>
 
