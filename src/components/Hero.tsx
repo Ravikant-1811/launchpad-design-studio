@@ -76,7 +76,7 @@ export const Hero = () => {
   const currentBadge = badgeItems[badgeIndex];
 
   return (
-    <section className="relative pt-28 md:pt-32 pb-20 md:pb-24 overflow-hidden bg-hero-glow">
+    <section className="relative pt-28 md:pt-32 pb-20 md:pb-24 overflow-hidden bg-background">
       <div className="container max-w-6xl text-center">
         <div className="max-w-3xl mx-auto">
           <motion.div
