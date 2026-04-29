@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
   Code2,
+  Camera,
   Facebook,
   Globe,
   Infinity,
@@ -12,17 +13,54 @@ import {
   Brain,
   Megaphone,
   Server,
-  Sparkles,
+  Search,
 } from "lucide-react";
 
 const trustLogos = [
-  { icon: Facebook, label: "Facebook" },
-  { icon: Instagram, label: "Instagram" },
-  { icon: Infinity, label: "Meta" },
-  { icon: MessageCircleMore, label: "WhatsApp" },
-  { icon: Globe, label: "Google" },
-  { icon: Sparkles, label: "SEO" },
-  { icon: Server, label: "Dev & Marketing" },
+  {
+    key: "facebook",
+    badge: "bg-[#1877F2]",
+    icon: <span className="text-[1.05rem] font-black leading-none text-white">f</span>,
+  },
+  {
+    key: "instagram",
+    badge: "bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af]",
+    icon: <Camera className="h-4 w-4 text-white" />,
+  },
+  {
+    key: "meta",
+    badge: "bg-[#1877F2]",
+    icon: <Infinity className="h-4 w-4 text-white" />,
+  },
+  {
+    key: "whatsapp",
+    badge: "bg-[#25D366]",
+    icon: <MessageCircleMore className="h-4 w-4 text-white" />,
+  },
+  {
+    key: "google",
+    badge: "bg-white",
+    icon: (
+      <span className="text-[1.05rem] font-black leading-none bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-40% via-[#FBBC05] to-[#34A853] bg-clip-text text-transparent">
+        G
+      </span>
+    ),
+  },
+  {
+    key: "seo",
+    badge: "bg-zinc-900",
+    icon: <Search className="h-4 w-4 text-white" />,
+  },
+  {
+    key: "dev-marketing",
+    badge: "bg-white",
+    icon: (
+      <div className="flex items-center gap-0.5 text-zinc-900">
+        <Code2 className="h-4 w-4" />
+        <Megaphone className="h-4 w-4" />
+      </div>
+    ),
+  },
 ];
 
 const badgeItems = [
@@ -54,25 +92,6 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mx-auto mb-8 flex w-full max-w-5xl items-center justify-center overflow-x-auto whitespace-nowrap rounded-full border border-border/70 bg-background/80 px-4 py-3 shadow-[0_16px_40px_-30px_rgba(0,0,0,0.16)] backdrop-blur-md"
-          >
-            <div className="flex min-w-max items-center gap-2 md:gap-3 text-muted-foreground/60">
-              {trustLogos.map((logo) => (
-                <div
-                  key={logo.label}
-                  className="flex items-center gap-2 rounded-full border border-border/60 bg-white px-3 py-2 text-sm font-medium text-foreground/60"
-                >
-                  <logo.icon className="h-4 w-4 shrink-0" />
-                  <span>{logo.label}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
             className="mx-auto mb-7 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-border/70 bg-white shadow-[0_20px_40px_-28px_rgba(0,0,0,0.22)]"
           >
             <AnimatePresence mode="wait">
@@ -84,12 +103,7 @@ export const Hero = () => {
                 transition={{ duration: 0.35 }}
                 className="flex h-20 w-20 items-center justify-center rounded-[1.5rem] bg-[#f7f7f7] shadow-sm"
               >
-                <div className="flex flex-col items-center justify-center gap-1">
-                  <currentBadge.icon className="h-8 w-8 text-foreground" />
-                  <span className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                    {currentBadge.label}
-                  </span>
-                </div>
+                <currentBadge.icon className="h-8 w-8 text-foreground" />
               </motion.div>
             </AnimatePresence>
           </motion.div>
@@ -135,6 +149,30 @@ export const Hero = () => {
                 </span>
               </a>
             </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.45 }}
+            className="mt-16 md:mt-20"
+          >
+            <p className="text-sm md:text-base font-medium text-muted-foreground">
+              Trusted by design teams at
+            </p>
+
+            <div className="mt-7 flex flex-nowrap items-center justify-center gap-3 overflow-x-auto rounded-full border border-border/70 bg-background/80 px-4 py-3 shadow-[0_16px_40px_-30px_rgba(0,0,0,0.16)] backdrop-blur-md">
+              <div className="flex min-w-max items-center gap-3">
+                {trustLogos.map((logo) => (
+                  <div
+                    key={logo.key}
+                    className={`flex h-12 w-12 items-center justify-center rounded-2xl border border-border/60 shadow-sm ${logo.badge}`}
+                  >
+                    {logo.icon}
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
 
         </div>
