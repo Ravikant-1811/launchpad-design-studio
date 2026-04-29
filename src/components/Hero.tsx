@@ -19,27 +19,22 @@ import {
 const trustLogos = [
   {
     key: "facebook",
-    badge: "bg-[#1877F2]",
     icon: <span className="text-[1.05rem] font-black leading-none text-white">f</span>,
   },
   {
     key: "instagram",
-    badge: "bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af]",
     icon: <Camera className="h-4 w-4 text-white" />,
   },
   {
     key: "meta",
-    badge: "bg-[#1877F2]",
     icon: <Infinity className="h-4 w-4 text-white" />,
   },
   {
     key: "whatsapp",
-    badge: "bg-[#25D366]",
     icon: <MessageCircleMore className="h-4 w-4 text-white" />,
   },
   {
     key: "google",
-    badge: "bg-white",
     icon: (
       <span className="text-[1.05rem] font-black leading-none bg-gradient-to-r from-[#4285F4] via-[#EA4335] via-40% via-[#FBBC05] to-[#34A853] bg-clip-text text-transparent">
         G
@@ -48,12 +43,10 @@ const trustLogos = [
   },
   {
     key: "seo",
-    badge: "bg-zinc-900",
     icon: <Search className="h-4 w-4 text-white" />,
   },
   {
     key: "dev-marketing",
-    badge: "bg-white",
     icon: (
       <div className="flex items-center gap-0.5 text-zinc-900">
         <Code2 className="h-4 w-4" />
@@ -161,17 +154,15 @@ export const Hero = () => {
               Trusted by design teams at
             </p>
 
-            <div className="mt-7 flex flex-nowrap items-center justify-center gap-3 overflow-x-auto rounded-full border border-border/70 bg-background/80 px-4 py-3 shadow-[0_16px_40px_-30px_rgba(0,0,0,0.16)] backdrop-blur-md">
-              <div className="flex min-w-max items-center gap-3">
+            <div className="mt-7 flex items-center justify-center gap-6 md:gap-10 flex-nowrap">
                 {trustLogos.map((logo) => (
                   <div
                     key={logo.key}
-                    className={`flex h-12 w-12 items-center justify-center rounded-2xl border border-border/60 shadow-sm ${logo.badge}`}
+                    className="flex h-12 w-12 items-center justify-center"
                   >
                     {logo.icon}
                   </div>
                 ))}
-              </div>
             </div>
           </motion.div>
 
