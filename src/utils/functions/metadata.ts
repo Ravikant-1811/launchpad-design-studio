@@ -4,6 +4,12 @@ export const generateMetadata = ({
     title = "Oracle Orbit - IT & Growth Partner",
     description = "Oracle Orbit builds websites, software, and automation, then scales visibility with SEO, Google Business Profile, and performance marketing.",
     image = "/thumbnail.png",
+    url,
+    type = "website",
+    publishedTime,
+    modifiedTime,
+    section,
+    keywords,
     icons = [
         {
             rel: "apple-touch-icon",
@@ -26,15 +32,28 @@ export const generateMetadata = ({
     title?: string;
     description?: string;
     image?: string | null;
+    url?: string;
+    type?: "website" | "article";
+    publishedTime?: string;
+    modifiedTime?: string;
+    section?: string;
+    keywords?: string[];
     icons?: Metadata["icons"];
     noIndex?: boolean;
 } = {}): Metadata => ({
     title,
     description,
+    keywords,
     icons,
+    alternates: url ? { canonical: url } : undefined,
     openGraph: {
         title,
         description,
+        type,
+        url,
+        section,
+        publishedTime,
+        modifiedTime,
         ...(image && { images: [{ url: image }] }),
     },
     twitter: {
