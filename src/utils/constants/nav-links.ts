@@ -1,4 +1,14 @@
-import { BookOpenIcon, GlobeIcon, HelpCircleIcon, MailIcon, MegaphoneIcon, NewspaperIcon, SearchIcon, UsersIcon, WandSparklesIcon } from "lucide-react";
+import {
+    BookOpenIcon,
+    GlobeIcon,
+    HelpCircleIcon,
+    MailIcon,
+    MegaphoneIcon,
+    NewspaperIcon,
+    SearchIcon,
+    UsersIcon,
+    WandSparklesIcon,
+} from "lucide-react";
 
 export const COMPANY_LINKS = [
     {
@@ -20,16 +30,25 @@ export const COMPANY_LINKS = [
         icon: HelpCircleIcon,
     },
     {
-        title: "Blog",
-        tagline: "Insights, updates, and ideas.",
-        href: "/resources/blog",
-        icon: BookOpenIcon,
-    },
-    {
         title: "Contact",
         tagline: "Let’s talk about your project.",
         href: "/contact",
         icon: MailIcon,
+    },
+] as const;
+
+export const RESOURCES_LINKS = [
+    {
+        title: "Blog",
+        tagline: "Read articles on websites, SEO, and growth.",
+        href: "/resources/blog",
+        icon: BookOpenIcon,
+    },
+    {
+        title: "Help",
+        tagline: "Get answers to common questions.",
+        href: "/resources/help",
+        icon: HelpCircleIcon,
     },
 ] as const;
 
@@ -76,8 +95,9 @@ export const NAV_LINKS = [
         href: "/faq",
     },
     {
-        title: "Blog",
+        title: "Resources",
         href: "/resources/blog",
+        menu: RESOURCES_LINKS,
     },
     {
         title: "Contact",

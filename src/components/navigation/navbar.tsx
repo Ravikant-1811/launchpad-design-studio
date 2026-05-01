@@ -44,6 +44,8 @@ const Navbar = () => {
                                                             "rounded-3xl border border-border/70 bg-white p-4 shadow-xl",
                                                             link.title === "Services"
                                                                 ? "lg:w-[820px]"
+                                                                : link.title === "Resources"
+                                                                  ? "lg:w-[560px]"
                                                                 : "lg:w-[640px]",
                                                         )}
                                                     >
@@ -109,6 +111,20 @@ const Navbar = () => {
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                        ) : link.title === "Resources" ? (
+                                                            <div className="grid gap-4 sm:grid-cols-2">
+                                                                {link.menu.map((menuItem) => (
+                                                                    <MenuCard
+                                                                        key={menuItem.title}
+                                                                        title={menuItem.title}
+                                                                        href={menuItem.href}
+                                                                        icon={menuItem.icon}
+                                                                        className="min-h-[148px] p-5"
+                                                                    >
+                                                                        {menuItem.tagline}
+                                                                    </MenuCard>
+                                                                ))}
+                                                            </div>
                                                         ) : (
                                                             <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
                                                                 <NavigationMenuLink asChild>
@@ -128,7 +144,7 @@ const Navbar = () => {
                                                                             </p>
                                                                         </div>
                                                                         <div className="mt-6 flex flex-wrap gap-2">
-                                                                            {["About", "Clients", "FAQ", "Blog", "Contact"].map((item) => (
+                                                                        {["About", "Clients", "FAQ", "Contact"].map((item) => (
                                                                                 <span
                                                                                     key={item}
                                                                                     className="rounded-full border border-border/70 bg-background px-3 py-1.5 text-xs font-medium text-muted-foreground"

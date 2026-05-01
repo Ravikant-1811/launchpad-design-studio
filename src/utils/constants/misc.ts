@@ -46,17 +46,17 @@ export const COMPANIES = [
 export const PROCESS = [
     {
         title: "Audit",
-        description: "We review your website, SEO, analytics, and current marketing channels to find the biggest growth gaps.",
+        description: "We review your site, SEO, analytics, and channels to spot the biggest gaps.",
         icon: SearchIcon,
     },
     {
         title: "Plan",
-        description: "We map the build roadmap, keyword targets, GBP actions, and campaign priorities around your goals.",
+        description: "We map the roadmap, keywords, GBP actions, and priorities around your goals.",
         icon: PenToolIcon,
     },
     {
         title: "Execute",
-        description: "We launch, measure, and improve with a focused cadence across design, content, automation, and ads.",
+        description: "We launch, measure, and improve across design, content, automation, and ads.",
         icon: RocketIcon,
     },
 ] as const;
@@ -219,66 +219,66 @@ export const FEATURES = [
 
 export const REVIEWS = [
     {
-        name: "Michael Smith",
-        username: "@michaelsmith",
+        name: "Rahul Sharma",
+        username: "@rahulsharma",
         avatar: "https://randomuser.me/api/portraits/men/1.jpg",
         rating: 5,
-        review: "This tool is a lifesaver! Managing and tracking my links has never been easier. A must-have for anyone dealing with numerous links."
+        review: "Our website feels sharper now, and the enquiries we get are much better qualified."
     },
     {
-        name: "Emily Johnson",
-        username: "@emilyjohnson",
+        name: "Priya Nair",
+        username: "@priyanair",
         avatar: "https://randomuser.me/api/portraits/women/1.jpg",
         rating: 4,
-        review: "Very useful app! It has streamlined my workflow considerably. A few minor bugs, but overall a great experience."
+        review: "The SEO and Google Business Profile work made our clinic easier to find in local search."
     },
     {
-        name: "Daniel Williams",
-        username: "@danielwilliams",
+        name: "Arjun Mehta",
+        username: "@arjunmehta",
         avatar: "https://randomuser.me/api/portraits/men/2.jpg",
         rating: 5,
-        review: "I've been using this app daily for months. The insights and analytics it provides are invaluable. Highly recommend it!"
+        review: "Automation saved our team hours every week and removed a lot of manual follow-up."
     },
     {
-        name: "Sophia Brown",
-        username: "@sophiabrown",
+        name: "Sarah Khan",
+        username: "@sarahkhan",
         avatar: "https://randomuser.me/api/portraits/women/2.jpg",
         rating: 4,
-        review: "This app is fantastic! It offers everything I need to manage my links efficiently."
+        review: "The redesign felt simple, fast, and easy for our customers to use."
     },
     {
-        name: "James Taylor",
-        username: "@jamestaylor",
+        name: "Vikram Iyer",
+        username: "@vikramiyer",
         avatar: "https://randomuser.me/api/portraits/men/3.jpg",
         rating: 5,
-        review: "Absolutely love this app! It's intuitive and feature-rich. Has significantly improved how I manage and track links."
+        review: "Their marketing support helped us turn more traffic into actual enquiries."
     },
     {
-        name: "Olivia Martinez",
-        username: "@oliviamartinez",
+        name: "Emily Carter",
+        username: "@emilycarter",
         avatar: "https://randomuser.me/api/portraits/women/3.jpg",
         rating: 4,
-        review: "Great app with a lot of potential. It has already saved me a lot of time. Looking forward to future updates and improvements."
+        review: "Communication was clear, and the work stayed focused on results."
     },
     {
-        name: "William Garcia",
-        username: "@williamgarcia",
+        name: "Karan Kapoor",
+        username: "@karankapoor",
         avatar: "https://randomuser.me/api/portraits/men/4.jpg",
         rating: 5,
-        review: "This app is a game-changer for link management. It's easy to use, extremely powerful and highly recommended!"
+        review: "They handled our build, SEO, and automation without making it feel complicated."
     },
     {
-        name: "Mia Rodriguez",
-        username: "@miarodriguez",
+        name: "Neha Joshi",
+        username: "@nehajoshi",
         avatar: "https://randomuser.me/api/portraits/women/4.jpg",
         rating: 4,
-        review: "I've tried several link management tools, but this one stands out. It's simple, effective."
+        review: "We liked the simple process and the practical suggestions."
     },
     {
-        name: "Henry Lee",
-        username: "@henrylee",
+        name: "Oliver James",
+        username: "@oliverjames",
         avatar: "https://randomuser.me/api/portraits/men/5.jpg",
         rating: 5,
-        review: "This app has transformed my workflow. Managing and analyzing links is now a breeze. I can't imagine working without it."
+        review: "Oracle Orbit felt like a real partner, not just a vendor."
     },
 ] as const;

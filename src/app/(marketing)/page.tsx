@@ -28,27 +28,16 @@ const HomePage = async () => {
                             <span className="backdrop absolute inset-[1px] rounded-full bg-white transition-colors duration-200 group-hover:bg-slate-50" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
                             <span className="z-10 py-0.5 text-sm text-foreground flex items-center justify-center gap-1">
-                                ✨ OracleOrbit Services
+                                Oracle Orbit
                                 <span className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5">→</span>
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            <span className="block">Connect</span>
-                            <span className="block">
-                                Innovate{" "}
-                                <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text">
-                                    Elevate
-                                </span>
-                            </span>
+                            <span className="block">Build.</span>
+                            <span className="block">Rank. Grow.</span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            Oracle Orbit is your IT and growth partner for websites, software,
-                            and automation.
-                            <br className="hidden md:block" />
-                            <span className="hidden md:block">
-                                We pair clean builds with SEO, Google Business Profile, and
-                                performance marketing to bring in better visibility and leads.
-                            </span>
+                            Oracle Orbit builds websites, improves visibility, and automates the busy work.
                         </p>
                         <HeroCta />
                         <div className="mt-12 flex w-full flex-col items-center px-4 md:px-8">
@@ -73,17 +62,19 @@ const HomePage = async () => {
                     </AnimationContainer>
 
                     <AnimationContainer delay={0.2} className="w-full">
-                        <HeroVisual src="/assets/heroimg.jpg" alt="Oracle Orbit hero image" />
+                        <HeroVisual
+                            src="/assets/dashboard-dark.svg"
+                            alt="Oracle Orbit dashboard showcase"
+                        />
                     </AnimationContainer>
                 </div>
             </MaxWidthWrapper >
             <ServicesSection
                 badge="Services"
-                title="Minimum services that build, rank, and grow your business"
-                description="We keep the offer focused: websites and software, SEO and Google Business Profile, automation and integrations, and performance marketing."
-                ctaLabel="Explore services"
+                title="Services that build growth."
+                description="Websites, SEO, automation, and performance marketing in one focused mix."
+                ctaLabel="View services"
                 ctaHref="/services"
-                className="pt-10"
             />
 
             {/* Process Section */}
@@ -92,10 +83,10 @@ const HomePage = async () => {
                     <div className="mx-auto flex w-full max-w-2xl flex-col items-center justify-center py-8 text-center">
                         <MagicBadge title="How we work" />
                         <h2 className="mt-6 text-3xl font-medium !leading-[1.05] text-foreground text-balance font-heading md:text-5xl">
-                            A process built for growth.
+                            A steady 3-step process.
                         </h2>
                         <p className="mt-4 max-w-2xl text-lg text-muted-foreground text-balance md:text-xl">
-                            We audit what&apos;s working, plan the right build, and execute with a steady cadence so your site and marketing keep improving.
+                            Audit, plan, and execute with clear priorities.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -127,12 +118,12 @@ const HomePage = async () => {
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="Our Customers" />
+                        <MagicBadge title="Testimonials" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            What our users are saying
+                            What clients say
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Here&apos;s what some of our users have to say about Linkify.
+                            A few words from businesses we&apos;ve helped grow.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -230,14 +221,14 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Step into the future of link management
+                                Ready to grow your business?
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Experience the cutting-edge solution that transforms how you handle your links. Elevate your online presence with our next-gen platform.
+                                Talk to Oracle Orbit about websites, SEO, automation, or marketing.
                             </p>
                             <div className="mt-6">
                                 <Button>
-                                    Get started for free
+                                    Contact us
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Button>
                             </div>
