@@ -65,9 +65,8 @@ const ServicesSection = ({
                         const theme = cardThemes[index % cardThemes.length];
 
                         return (
+                            <Link key={service.slug} href={`/services/${service.slug}`} className="block h-full">
                                 <article
-                                    id={service.id}
-                                    key={service.title}
                                     className={cn(
                                         "group relative overflow-hidden rounded-[32px] border border-border/60 bg-background",
                                         "shadow-[0_24px_70px_-24px_rgba(15,23,42,0.18)] transition-transform duration-300 hover:-translate-y-1",
@@ -119,6 +118,7 @@ const ServicesSection = ({
                                         </div>
                                     </div>
                                 </article>
+                            </Link>
                         );
                     })}
                 </div>

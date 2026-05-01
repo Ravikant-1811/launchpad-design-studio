@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { generateMetadata } from "@/utils";
 
 export const metadata: Metadata = generateMetadata({
-    title: "Oracle Orbit Blog | SEO, websites, automation, and growth",
-    description: "Read Oracle Orbit insights on websites, SEO, Google Business Profile, automation, and performance marketing.",
+    title: "Oracle Orbit Blog | Insights",
+    description: "Short Oracle Orbit insights on websites, SEO, automation, and growth.",
     image: "/assets/blogs/seo-priorities.svg",
     url: "/resources/blog",
     keywords: [
@@ -26,10 +26,10 @@ const BlogPage = () => {
                         Oracle Orbit Blog
                     </span>
                     <h1 className="mt-6 text-3xl font-semibold !leading-tight md:text-5xl lg:text-6xl">
-                        SEO, websites, automation, and growth insights.
+                        Simple insights for SEO, websites, and growth.
                     </h1>
                     <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg">
-                        A small collection of practical articles on building better websites, showing up in search, and turning visibility into real enquiries.
+                        Short, practical articles on building better websites, improving search visibility, and turning attention into enquiries.
                     </p>
                 </div>
             </AnimationContainer>

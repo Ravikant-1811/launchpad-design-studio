@@ -63,6 +63,7 @@ export const PROCESS = [
 
 export const SERVICES = [
     {
+        slug: "website-development",
         id: "websites",
         eyebrow: "Build",
         title: "Websites & software",
@@ -71,6 +72,7 @@ export const SERVICES = [
         tags: ["Responsive", "Scalable", "Fast loading"],
     },
     {
+        slug: "seo",
         id: "seo",
         eyebrow: "Rank",
         title: "SEO & Google Business Profile",
@@ -79,6 +81,7 @@ export const SERVICES = [
         tags: ["Local SEO", "Maps", "Listings"],
     },
     {
+        slug: "automation",
         id: "automation",
         eyebrow: "Automate",
         title: "Automation & integrations",
@@ -87,6 +90,7 @@ export const SERVICES = [
         tags: ["Workflows", "Zapier-ready", "Integrations"],
     },
     {
+        slug: "performance-marketing",
         id: "marketing",
         eyebrow: "Grow",
         title: "Performance marketing",

@@ -35,27 +35,27 @@ export const COMPANY_LINKS = [
 
 export const SERVICE_LINKS = [
     {
-        title: "Websites & software",
-        tagline: "Conversion-ready builds that feel fast and reliable.",
-        href: "/services#websites",
+        title: "Website development",
+        tagline: "Fast, responsive websites and landing pages.",
+        href: "/services/website-development",
         icon: GlobeIcon,
     },
     {
-        title: "SEO & GBP",
-        tagline: "Rank locally and show up where customers search.",
-        href: "/services#seo",
+        title: "SEO",
+        tagline: "On-page, technical, and local search work.",
+        href: "/services/seo",
         icon: SearchIcon,
     },
     {
         title: "Automation",
-        tagline: "Workflow automations that remove repetitive work.",
-        href: "/services#automation",
+        tagline: "Workflow automations that save time.",
+        href: "/services/automation",
         icon: WandSparklesIcon,
     },
     {
         title: "Performance marketing",
-        tagline: "Campaigns and reporting that drive revenue.",
-        href: "/services#marketing",
+        tagline: "Campaigns and tracking that drive revenue.",
+        href: "/services/performance-marketing",
         icon: MegaphoneIcon,
     },
 ] as const;
